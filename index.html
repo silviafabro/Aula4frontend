@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Silvia Fabro - Maquiagem</title>
+  <style>
+
+    /* Animacao de fundo */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      animation: mudaCor 6s infinite;
+    }
+
+    @keyframes mudaCor {
+      0%   { background-color: #ffd6e0; }
+      25%  { background-color: #f9a8d4; }
+      50%  { background-color: #c084fc; }
+      75%  { background-color: #fb923c; }
+      100% { background-color: #ffd6e0; }
+    }
+
+    h1 {
+      color: #c2185b;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    p.slogan {
+      color: #880e4f;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    /* Cartoes */
+    .cartoes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .cartao {
+      background-color: white;
+      border: 2px solid #f48fb1;
+      border-radius: 12px;
+      width: 160px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .cartao:hover {
+      transform: scale(1.1);
+    }
+
+    .cartao p.descricao {
+      display: none;
+      font-size: 0.85rem;
+      color: #880e4f;
+      margin-top: 8px;
+    }
+
+    .cartao:hover p.descricao {
+      display: block;
+    }
+
+    /* Botao */
+    .botao {
+      background-color: #e91e8c;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .botao:active {
+      animation: clique 0.3s;
+    }
+
+    @keyframes clique {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Silvia Fabro</h1>
+  <p class="slogan">Cosmeticos e Maquiagem</p>
+  <p>Passe o mouse nos cartoes para saber mais!</p>
+
+  <div class="cartoes">
+
+    <div class="cartao">
+      <h3>Batom Matte</h3>
+      <p class="descricao">Cor intensa e duradoura para realcar seus labios com elegancia.</p>
+    </div>
+
+    <div class="cartao">
+      <h3>Delineador</h3>
+      <p class="descricao">Tracado preciso para um olhar marcante e sofisticado.</p>
+    </div>
+
+    <div class="cartao">
+      <h3>Iluminador</h3>
+      <p class="descricao">Realca os pontos altos do rosto com brilho natural e delicado.</p>
+    </div>
+
+    <div class="cartao">
+      <h3>Base</h3>
+      <p class="descricao">Cobertura leve que uniformiza e cuida da pele o dia todo.</p>
+    </div>
+
+  </div>
+
+  <button class="botao">Ver Produtos</button>
+
+</body>
+</html>
